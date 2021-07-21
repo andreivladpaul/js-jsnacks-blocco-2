@@ -71,20 +71,39 @@ for (i = 0; i < 5; i++) {
     console.log(randomName + " " + randomSurname );
 } */
 
-//-----------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------
 //Crea un array di numeri interi e fai la somma di tutti gli elementi che sono in posizione dispari
 
-var myArray = [3, 4, 46, 76, 34, 38, 75, 43];
+var myArray = [4, 17, 89, 10, 4, 14, 6, 73, 84, 90];
+sum = 0;
 
-var i = 0;
-var sum = 0;
+for (let i = 0; i < myArray.length; i++) {
+	const element = myArray[i];
 
-
-for (i = 0; i < myArray.length; i++) {
-
-    if (myArray[i] % 2 != 0) {
-        sum = sum + myArray[i];
-        console.log(myArray[i]);
-    }
+	if (element % 2 != 0) {
+		sum += element;
+	}
 }
-console.log(sum);
+console.log("La somma dei numeri dispari e': " + sum);
+ 
+
+
+//--------------------------------------------------------------------------------------------------------
+// Esercitazione pomeriggio
+//Crea due array che hanno un numero di elementi diversi. Aggiungi elementi all’array che ha meno elementi fino a quando ne avrà tanti quanti l’altro.
+
+/* var arrayFirst = ["fiore", "palla", "libro", "tazza", "computer", "tastiera"];
+var First_length = arrayFirst.length;
+
+var arraySecond = ["rosso" , "nero"];
+var Second_length = arraySecond.length;
+
+
+var newItem = prompt("Popola array")
+
+while (Second_length < First_length) {
+    arraySecond.push(prompt("Popola l'array"))
+    Second_length++;
+}
+
+console.log(arraySecond); */
