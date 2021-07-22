@@ -77,13 +77,13 @@ for (i = 0; i < 5; i++) {
 var myArray = [4, 17, 89, 10, 4, 14, 6, 73, 84, 90];
 sum = 0;
 
-for (let i = 0; i < myArray.length; i++) {
-	const element = myArray[i];
-
-	if (element % 2 != 0) {
-		sum += element;
-	}
+for (var i = 0; i < myArray.length; i++) {
+    if (i % 2 !== 0) { 
+        sum += (myArray[i]);
+        console.log(myArray[i]);
+    }
 }
+
 console.log("La somma dei numeri dispari e': " + sum);
  
 
